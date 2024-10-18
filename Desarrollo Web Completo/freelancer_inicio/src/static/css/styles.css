@@ -7,12 +7,31 @@
 }
 
 html {
+    box-sizing: border-box;
     font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
     font-size: 16px;
     font-family: "Afacad Flux", sans-serif;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
 }
 
 /* TITULO */
@@ -71,4 +90,22 @@ body {
     background-image: url("../img/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 410px;
+    position: relative;
+}
+
+.contenidoHero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.719);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenidoHero h2,
+.contenidoHero p {
+    color: var(--blanco);
 }
