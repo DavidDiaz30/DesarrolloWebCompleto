@@ -182,35 +182,37 @@
         <form action="#" class="formulario">
           <fieldset>
             <legend>Contáctanos llenando los campos</legend>
-            <div>
-              <label for="name">Nombre</label>
-              <input type="text" placeholder="Tu Nombre" />
-            </div>
 
-            <div>
-              <label for="phone">Teléfono</label>
-              <input type="tel" placeholder="Tu Teléfono" />
-            </div>
+            <div class="contenedorCampos">
+              <div class="campo">
+                <label for="name">Nombre</label>
+                <input class="inputText" type="text" placeholder="Tu Nombre" />
+              </div>
 
-            <div>
-              <label for="email">Correo</label>
-              <input type="email" placeholder="Tu Email" />
-            </div>
+              <div class="campo">
+                <label for="phone">Teléfono</label>
+                <input class="inputText" type="tel" placeholder="Tu Teléfono" />
+              </div>
 
-            <div>
-              <label for="textarea">Mensaje</label>
-              <textarea name="message" id=""></textarea>
-            </div>
+              <div class="campo">
+                <label for="email">Correo</label>
+                <input class="inputText" type="email" placeholder="Tu Email" />
+              </div>
 
-            <div>
-              <input type="submit" value="Enviar" />
+              <div class="campo">
+                <label for="textarea">Mensaje</label>
+                <textarea class="inputText" name="message" id=""></textarea>
+              </div>
+            </div>
+            <div class="alinear-derecha flex">
+              <input class="boton w-sm-100" type="submit" value="Enviar" />
             </div>
           </fieldset>
         </form>
       </section>
     </main>
 
-    <footer>
+    <footer class="footer">
       <p>Todos los derechos reservados. David Diaz Freelancer</p>
     </footer>
   </body>
